@@ -1,0 +1,69 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s sticky header.
+ */
+.onscroll.transparent-header-active .header-container.js-transparent-header .sticky-wrapper {
+  height: 0 !important;
+}
+.header {
+  position: fixed;
+  border-bottom: 1px solid #d2d2d2;
+  height: 85px;
+  z-index: 499;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  //background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1), 0 2px 2px rgba(100, 100, 100, 0.1);
+  box-shadow: 0 2px 14px rgba(100, 100, 100, 0.1), 0 2px 2px rgba(100, 100, 100, 0.1);
+}
+.onscroll .header__container {
+
+}
+.onscroll .header-first,
+.onscroll .header-second,
+.onscroll .header-third {
+
+}
+.onscroll .header-container .content > ul.menu {
+  padding-top: 13px;
+}
+.onscroll .header-container .content > ul.menu.cta-active {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+.onscroll .header-container .sf-menu ul {
+  margin-top: 23px;
+}
+.onscroll .search-area {
+  padding: 3px 10px 0 0;
+}
+.fixed-header-enabled.onscroll .header__container,
+.fixed-header-enabled.onscroll .header-second,
+.fixed-header-enabled.onscroll .header-third,
+.fixed-header-enabled.onscroll .header-first,
+.fixed-header-enabled.onscroll .search-area,
+.fixed-header-enabled.onscroll .header-container ul.menu {
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+@media (max-width: 991px) {
+  .onscroll .header__container > .row > div {
+    display: none;
+  }
+  .onscroll .header__container > .row > div:last-of-type {
+    display: block;
+  }
+  .onscroll .header-container .content > ul.menu {
+    padding-top: 10px;
+  }
+  .onscroll .search-area {
+    padding: 0px 10px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .onscroll .header.js-fixed {
+    display: none;
+  }
+}

@@ -1,0 +1,373 @@
+/*
+ * @file
+ * Overall specifications for Enterprise+.
+ */
+body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #707070;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+/*Paragraphs and links*/
+p {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+p.large {
+  font-size: 18px;
+  line-height: 1.45;
+}
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.region--light-typography.region--dark-background a.is-active {
+  color: #ddd;
+}
+a.link--bordered,
+.link--bordered a {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-decoration: none;
+}
+a.link--bordered:hover,
+.link--bordered a:hover {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-decoration: none;
+}
+.region--light-typography a.link--bordered,
+.region--light-typography .link--bordered a {
+  border-color: #ffffff;
+  text-decoration: none;
+}
+.region--light-typography a.link--bordered:hover,
+.region--light-typography .link--bordered a:hover {
+  border-color: transparent;
+  text-decoration: none;
+}
+.region--light-typography.region--dark-background a.link--bordered,
+.region--light-typography.region--dark-background .link--bordered a {
+  text-decoration: none;
+}
+.region--light-typography.region--dark-background a.link--bordered:hover,
+.region--light-typography.region--dark-background .link--bordered a:hover {
+  border-color: #ffffff;
+  text-decoration: none;
+}
+a.link--hover-style-2,
+.link--hover-style-2 a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  display: block;
+}
+a.link--hover-style-2:before,
+.link--hover-style-2 a:before {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -5px;
+  font-family: "FontAwesome";
+  font-size: 10px;
+  line-height: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  content: "\f105";
+}
+a.link--hover-style-2:hover,
+.link--hover-style-2 a:hover {
+  padding-left: 20px;
+  text-decoration: none;
+}
+a.link--hover-style-2:hover:before,
+.link--hover-style-2 a:hover:before {
+  left: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0.1s; /* Safari */
+  transition-delay: 0.1s;
+}
+.region--light-typography.region--dark-background a.link--hover-style-2:before,
+.region--light-typography.region--dark-background .link--hover-style-2 a:before {
+  color: #ffffff;
+}
+.region--light-typography.region--dark-background .text--dark,
+.region--light-typography.region--black-background .text--dark {
+  color: #ffffff;
+}
+.region--light-typography.region--colored-background .text--colored,
+.region--light-typography.region--black-background .text--colored {
+  color: #ffffff;
+}
+
+/*Regions with light typography*/
+.region--light-typography {
+  color: #ffffff;
+}
+.region--light-typography a,
+.region--light-typography a.link--dark,
+.region--light-typography .link--dark a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.region--light-typography a:hover,
+.region--light-typography a:focus,
+.region--light-typography a.link--dark:hover,
+.region--light-typography a.link--dark:focus,
+.region--light-typography .link--dark a:hover,
+.region--light-typography .link--dark a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.region--light-typography.region--dark-background a {
+  text-decoration: none;
+}
+.region--light-typography.region--dark-background a:hover,
+.region--light-typography.region--dark-background a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Basic elements*/
+img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+img.img--bordered,
+.img--bordered img {
+  border: 1px solid #e7e7e7;
+}
+.region--light-typography img.img--bordered,
+.region--light-typography .img--bordered img {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+code,
+pre {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre;
+  white-space: pre-wrap;
+  font-family: 'Source Code Pro', Consolas, Monaco, Courier;
+}
+pre {
+  background: #f6f8f9;
+  border: none;
+  border-left: 5px solid #d3d1cd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  color: #222222;
+  padding: 20px;
+  font-size: 14px;
+  max-height: 62px;
+  overflow: hidden;
+  margin: 40px 0 40px 45px;
+}
+pre:hover {
+  max-height: 10000px;
+  -webkit-transition: all ease-in-out 2s;
+  -moz-transition: all ease-in-out 2s;
+  -o-transition: all ease-in-out 2s;
+  -ms-transition: all ease-in-out 2s;
+  transition: all ease-in-out 2s;
+}
+blockquote {
+  font-size: 24px;
+  line-height: 1.25;
+  font-style: italic;
+  padding: 5px 0 5px 30px;
+  margin: 15px 0 25px;
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+.region--colored-background blockquote,
+.region--black-background blockquote,
+.region--dark-background blockquote {
+  border-color: #ffffff;
+}
+hr {
+  border-top: 1px solid #f4f4f4;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.region--light-typography hr {
+  border-color: #ffffff;
+}
+
+/*Headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.20;
+  padding: 0;
+  margin: 20px 0 10px 0;
+  font-weight: 400;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 26px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+h1.title {
+  margin-top: 0;
+}
+h1.page-title {
+  margin-bottom: 20px;
+}
+.region--light-typography h1,
+.region--light-typography h2,
+.region--light-typography h3,
+.region--light-typography h4,
+.region--light-typography h5,
+.region--light-typography h6 {
+  color: #ffffff;
+}
+
+/*resposinve text align*/
+@media (min-width: 1200px) {
+  .lg-text-center {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .md-text-center {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sm-text-center {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .xs-text-center {
+    text-align: center;
+  }
+}
+
+/*Block title*/
+.block-title {
+  margin-bottom: 15px;
+  margin-top: 0;
+  line-height: 1.1;
+  font-size: 50px;
+}
+h2.block-title {
+  font-size: 26px;
+  padding-bottom: 10px;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 1.2;
+}
+.region--light-typography h2.block-title {
+  border-color: rgba(255,255,255,0.1);
+}
+.footer__section h2.title,
+.footer__section nav > h2,
+.footer__section .block-search > h2,
+.footer-bottom__section h2.title,
+.footer-bottom__section nav > h2,
+.footer-bottom__section .block-search > h2,
+.subfooter__section h2.title,
+.subfooter__section nav > h2,
+.subfooter__section .block-search > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.region--light-typography .footer__section h2.title,
+.region--light-typography .footer__section nav > h2,
+.region--light-typography .footer__section .block-search > h2,
+.region--light-typography .footer-bottom__section h2.title,
+.region--light-typography .footer-bottom__section nav > h2,
+.region--light-typography .footer-bottom__section .block-search > h2,
+.region--light-typography .subfooter__section h2.title,
+.region--light-typography .subfooter__section nav > h2,
+.region--light-typography .subfooter__section .block-search > h2 {
+  border-color: rgba(255,255,255,0.1);
+}
+@media (max-width: 991px) {
+  .footer__section h2.title,
+  .footer__section nav > h2,
+  .footer__section .block-search > h2,
+  .footer-bottom__section h2.title,
+  .footer-bottom__section nav > h2,
+  .footer-bottom__section .block-search > h2,
+  .subfooter__section h2.title,
+  .subfooter__section nav > h2,
+  .subfooter__section .block-search > h2 {
+    margin-bottom: 15px;
+  }
+}
+h2.title,
+nav > h2,
+.block-search > h2 {
+  font-size: 26px;
+  padding-bottom: 10px;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.region--light-typography h2.title,
+.region--light-typography nav > h2,
+.region--light-typography .block-search > h2 {
+  border-color: rgba(255,255,255,0.1);
+}
+.slideout__section h2.title,
+.slideout__section nav > h2,
+.slideout__section .block-search > h2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+/* Content region overrides */
+.region-content h2.title,
+.region-content nav > h2,
+.region-content .block-search > h2 {
+  margin: 20px 0 20px 0;
+}

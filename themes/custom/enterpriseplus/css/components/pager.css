@@ -1,0 +1,75 @@
+/**
+ * @file
+ * Styles for Enterprise+'s full pager.
+ */
+
+/* Using .pager selector on the first one to override .region-content ul. */
+.pager__items {
+  margin: 30px 0;
+  padding: 30px 0px 0;
+  border-top: 1px solid #e9e9e9;
+  font-size: 0;
+}
+li.pager__item {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+li.pager__item--next {
+  margin-left: 25px;
+}
+li.pager__item--previous {
+  margin-right: 25px;
+}
+li.pager__item > a {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: #707070;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1;
+  text-decoration: none;
+  background-color: #f2f4f6;
+}
+li.pager__item a:hover,
+li.pager__item.is-active a {
+  color: #ffffff;
+}
+
+/*mini pager @colored regions*/
+.region--colored-background .pager__items,
+.region--dark-background .pager__items {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.region--black-background .pager__items {
+  border-color: #313131;
+}
+.region--light-typography li.pager__item > a {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.region--light-typography li.pager__item a:hover,
+.region--light-typography li.pager__item.is-active a,
+.region--light-typography li.pager__item.is-active:last-child a {
+  background-color: #ffffff;
+}
+.region--black-background li.pager__item a:hover,
+.region--black-background li.pager__item.is-active a,
+.region--black-background li.pager__item.is-active:last-child a {
+  color: #232323;
+}
+.region--gray-background li.pager__item > a {
+  color: #ffffff;
+}
+
+/*Reset Bootstrap's rules*/
+.pager {
+  margin: 0;
+}

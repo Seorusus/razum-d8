@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s google maps.
+ */
+.google-map-canvas {
+  height: 400px;
+}
+.sub-featured__section .google-map-canvas {
+  margin: 0 -15px;
+}
+.google-map-canvas img {
+  max-width: inherit;
+}

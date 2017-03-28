@@ -1,0 +1,43 @@
+/**
+ * @file
+ * Visual styles for taxonomy terms in Enterprise+.
+ */
+.field--entity-reference-target-type-taxonomy-term {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 15px 0;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background-color: #f6f8f9;
+  position: relative;
+}
+.field--entity-reference-target-type-taxonomy-term:after {
+  content: "\f07c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  margin-top: -13px;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item,
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a,
+.field--entity-reference-target-type-taxonomy-term.field__item a {
+  display: block;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a:after {
+  content: ",";
+}
+.field--entity-reference-target-type-taxonomy-term .field__item:last-child a:after {
+  content: "";
+}
+.field--name-field-mt-brand-image {
+  margin-bottom: 30px;
+}
+.field--name-field-mt-collection-image {
+  margin-bottom: 30px;
+}

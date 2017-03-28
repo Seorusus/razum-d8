@@ -1,0 +1,165 @@
+/**
+ * @file
+ * Styles for Enterprise+'s buttons.
+ */
+a.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 18px 25px 17px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5px 10px 0;
+  text-align: center;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+input[type="submit"] + input[type="submit"] {
+  margin-left: 20px;
+}
+a.button:hover,
+a.button:focus {
+  color: #ffffff;
+}
+span.button-operator {
+  margin: 0 10px 0 5px;
+}
+a.button i {
+  padding-right: 10px;
+}
+a.button--no-margins {
+  margin: 0;
+}
+
+/*Buttons hover style 2*/
+a.button.button--hover-style-2 {
+  position: relative;
+  z-index: 1;
+}
+a.button.button--hover-style-2:before {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.button.button--hover-style-2:hover:before,
+a.button.button--hover-style-2:focus:before {
+  transform: scaleX(1);
+}
+
+/*Colored Regions*/
+.region--colored-background a.button,
+.region--colored-background input[type="submit"],
+.region--colored-background input[type="reset"],
+.region--colored-background input[type="button"] {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+.region--colored-background a.button:hover,
+.region--colored-background input[type="submit"]:hover,
+.region--colored-background input[type="reset"]:hover,
+.region--colored-background input[type="button"]:hover,
+.region--colored-background a.button:focus,
+.region--colored-background input[type="submit"]:focus,
+.region--colored-background input[type="reset"]:focus,
+.region--colored-background input[type="button"]:focus {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+.region--light-typography.region--dark-background a.button,
+.region--dark-background input[type="submit"],
+.region--dark-background input[type="reset"],
+.region--dark-background input[type="button"] {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+.region--light-typography.region--dark-background a.button:hover,
+.region--dark-background input[type="submit"]:hover,
+.region--dark-background input[type="reset"]:hover,
+.region--dark-background input[type="button"]:hover,
+.region--dark-background a.button:focus,
+.region--dark-background input[type="submit"]:focus,
+.region--dark-background input[type="reset"]:focus,
+.region--dark-background input[type="button"]:focus {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.region--black-background a.button,
+.region--black-background input[type="submit"],
+.region--black-background input[type="reset"],
+.region--black-background input[type="button"] {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+.region--black-background a.button:hover,
+.region--black-background input[type="submit"]:hover,
+.region--black-background input[type="reset"]:hover,
+.region--black-background input[type="button"]:hover,
+.region--black-background a.button:focus,
+.region--black-background input[type="submit"]:focus,
+.region--black-background input[type="reset"]:focus,
+.region--black-background input[type="button"]:focus {
+  color: #232323;
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+/*Colored Regions style 2*/
+.region--colored-background a.button.button--hover-style-2:hover,
+.region--dark-background a.button.button--hover-style-2:hover,
+.region--black-background a.button.button--hover-style-2:hover {
+  background-color: transparent;
+}
+.region--colored-background a.button.button--hover-style-2:before,
+.region--dark-background a.button.button--hover-style-2:before,
+.region--black-background a.button.button--hover-style-2:before {
+  background-color: #ffffff;
+}
+
+/*Colored Button*/
+a.button--colored,
+.region--colored-background a.button--colored,
+.region--dark-background a.button--colored,
+.region--black-background a.button--colored {
+  color: #ffffff;
+}

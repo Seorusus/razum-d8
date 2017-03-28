@@ -1,0 +1,20 @@
+uuid: 833570df-d401-4b7d-bb86-51356262da75
+langcode: en
+status: true
+dependencies:
+  theme:
+    - enterpriseplus
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: enterpriseplus_local_actions
+theme: enterpriseplus
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

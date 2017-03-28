@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s progress bars.
+ */
+.progress {
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}

@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s view grid style 2 views.
+ */
+.view-grid-style-2 .views-row {
+  padding: 0 0 20px 0;
+  background-color: #f6f8f9;
+  color: #707070;
+}
+.view-grid-style-2 .views-row:nth-child(2n) {
+  background-color: #ffffff;
+}
+.view-grid-style-2 .views-field-field-image {
+  margin-bottom: 25px;
+}
+.view-grid-style-2 .views-field-field-image img {
+  border-radius: 0px;
+}
+.view-grid-style-2 .overlay {
+  border-radius: 0px;
+}
+.view-grid-style-2 .views-field-title {
+  padding: 0 30px;
+}
+.view-grid-style-2 .views-field-title a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.view-grid-style-2 .views-field-title a:hover {
+  text-decoration: none;
+}
+.view-grid-style-2 .views-field-field-mt-subtitle {
+  padding: 0 30px;
+}

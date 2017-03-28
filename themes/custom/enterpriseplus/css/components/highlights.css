@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Visual styles for highlights in Enterprise+.
+ */
+.highlight {
+  text-align: center;
+  margin-top: 25px;
+}
+.highlight-head {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 130px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.highlight-body {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/*highoights @colored regions*/
+.region--light-typography .highlight-head {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.region--light-typography .highlight-body {
+  color: #ffffff;
+}

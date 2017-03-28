@@ -1,0 +1,107 @@
+{#
+/**
+ * @file
+ * Enterprise+'s theme implementation to display a Product node.
+ */
+#}
+
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+{{ attach_library('classy/node') }}
+{{ attach_library('enterpriseplus/node') }}
+<article{{ attributes.addClass(classes) }}>
+  <div class="node__container">
+    <div class="row">
+      {% block node_side %}
+        {% if content.field_image|render %}
+          <div class="col-md-5">
+            <div class="node__side-content clearfix">
+              {{ content.field_image }}
+              {% if content.field_mt_video|render %}
+                <ul class="inline-list">
+                  {% if content.field_mt_video|render %}
+                    <li class="inline-list__item">
+                      {{ content.field_mt_video }}
+                    </li>
+                  {% endif %}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endblock %}
+      {% block content %}
+        {{ attach_library('enterpriseplus/node-product') }}
+        <div class="{{ (content.field_image|render) ? 'col-md-7' : 'col-md-12' }}">
+          <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
+            <header class="node__header">
+              {{ title_prefix }}
+              {% if not page %}
+                <h2{{ title_attributes.addClass('node__title') }}>
+                  <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+                </h2>
+              {% else %}
+                <h1{{ title_attributes.addClass('node__title') }}>{{ label }}</h1>
+              {% endif %}
+              {{ title_suffix }}
+              {% if display_submitted %}
+                <div class="node__meta">
+                  {{ author_picture }}
+                  <span{{ author_attributes.addClass('node__submitted-info') }}>
+                    {% trans %}By {{ author_name }} on {{ date }}{% endtrans %}
+                  </span>
+                  {{ metadata }}
+                </div>
+              {% endif %}
+            </header>
+            {% if node.comment and comment_count > 0 %}
+              <div class="comments-count__counter">
+                {% trans %}
+                  1 comment
+                {% plural comment_count %}
+                  {{ comment_count }} comments
+                {% endtrans %}
+              </div>
+            {% endif %}
+            {% if not content.field_image|render and content.field_mt_video|render %}
+              <ul class="inline-list">
+                {% if content.field_mt_video|render %}
+                  <li class="inline-list__item">
+                    {{ content.field_mt_video }}
+                  </li>
+                {% endif %}
+              </ul>
+            {% endif %}
+            {% if content.field_mt_product_code|render or content.field_mt_product_availability|render %}
+              <ul class="inline-list">
+                {% if content.field_mt_product_code|render %}
+                  <li class="inline-list__item">
+                    {{ content.field_mt_product_code }}
+                  </li>
+                {% endif %}
+                {% if content.field_mt_product_availability|render %}
+                  <li class="inline-list__item">
+                    {{ content.field_mt_product_availability }}
+                  </li>
+                {% endif %}
+              </ul>
+            {% endif %}
+            {{ content|without('comment', 'field_image', 'field_mt_product_code', 'field_mt_product_availability', 'field_mt_content_tabs', 'field_mt_video', 'links') }}
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+    {{ content.field_mt_content_tabs }}
+    {{ content.links }}
+    {{ content.comment }}
+  </div>
+</article>

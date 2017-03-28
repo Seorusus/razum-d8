@@ -1,0 +1,901 @@
+/**
+ * @file
+ Red color styling for Enterprise+.
+ *
+ * Base color: #e79088
+ * Dark color: #A50F15
+ * RGB Base color: 231, 144, 136
+ * RGB Dark color: 165, 15, 21
+ */
+
+$base: #e79088;
+$dark: #A50F15;
+$rgb_base: 231, 144, 136;
+$rgb_dark: 165, 15, 21;
+
+/* base: elements */
+a {
+  color:  $base;
+}
+a:hover {
+  color: $dark;
+}
+a:focus {
+  color: $dark;
+}
+a.link--dark,
+.link--dark a {
+  color: $dark;
+}
+a.link--dark:hover,
+a.link--dark:focus,
+.link--dark a:hover,
+.link--dark a:focus {
+  color:  $base;
+}
+a.link--bordered,
+.link--bordered a {
+  border-bottom-color:  $base;
+}
+a.link--bordered:hover,
+.link--bordered a:hover {
+  border-bottom-color: $dark;
+}
+.region--light-typography.region--dark-background a.link--bordered,
+.region--light-typography.region--dark-background .link--bordered a {
+  border-color:  $base;
+}
+a.link--hover-style-2:before,
+.link--hover-style-2 a:before {
+  color:  $base;
+}
+.region--light-typography.region--dark-background a {
+  color:  $base;
+}
+.text--colored {
+  color:  $base;
+}
+.text--dark {
+  color: $dark;
+}
+blockquote {
+  border-left-color:  $base;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+}
+
+/* base: layout */
+.region--colored-background {
+  background-color:  $base;
+}
+.region--dark-background {
+  background-color: $dark;
+}
+.region--colored-background + .region--separator-incline-diagonal:before {
+  background: linear-gradient(to bottom right,  $base 50%, transparent 50.1%);
+}
+.region--dark-background + .region--separator-incline-diagonal:before {
+  background: linear-gradient(to bottom right, $dark 50%, transparent 50.1%);
+}
+.region--colored-background + .region--separator-decline-diagonal:before {
+  background: linear-gradient(to bottom left,  $base 50%, transparent 50.1%);
+}
+.region--dark-background + .region--separator-decline-diagonal:before {
+  background: linear-gradient(to bottom left, $dark 50%, transparent 50.1%);
+}
+
+/* components: accordion */
+.panel-title a {
+  color: $dark;
+}
+.panel-title a:focus {
+  color: $dark;
+}
+.panel-heading--trigger-icon .panel-title a:after {
+  background-color: $dark;
+}
+.panel-heading--trigger-icon .panel-title a.collapsed:after {
+  background-color:  $base;
+}
+.panel-heading--trigger-icon .panel-title a:hover:after {
+  background-color: $dark;
+}
+.region--light-typography .panel-title a:hover {
+  color: $dark;
+}
+.region--light-typography .panel-body a {
+  color:  $base;
+}
+.region--light-typography .panel-body a:hover {
+  color: $dark;
+}
+.panel-group.panel-group--style-2 .panel .panel-title a {
+  background-color: $dark;
+}
+.panel-group.panel-group--style-2 .panel-title a.collapsed {
+  background-color:  $base;
+}
+.panel-group.panel-group--style-2 .panel-title a:hover {
+  background-color: $dark;
+}
+.region--colored-background .panel-group.panel-group--style-2 .panel-heading--trigger-icon .panel-title a,
+.region--colored-background .panel-group.panel-group--style-2 .panel-heading--trigger-icon .panel-title a:hover {
+  color:  $base;
+}
+.region--dark-background .panel-group.panel-group--style-2 .panel-heading--trigger-icon .panel-title a,
+.region--dark-background .panel-group.panel-group--style-2 .panel-heading--trigger-icon .panel-title a:hover {
+  color: $dark;
+}
+
+/* components: breadcrumb */
+.breadcrumb__items {
+  color: $dark;
+}
+
+/* components: buttons */
+a.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color:  $base;
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+}
+a.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+a.button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+a.button.button--hover-style-2:before {
+  background-color: $dark;
+}
+.region--colored-background a.button:hover,
+.region--colored-background input[type="submit"]:hover,
+.region--colored-background input[type="reset"]:hover,
+.region--colored-background input[type="button"]:hover,
+.region--colored-background a.button:focus,
+.region--colored-background input[type="submit"]:focus,
+.region--colored-background input[type="reset"]:focus,
+.region--colored-background input[type="button"]:focus {
+  color:  $base;
+}
+.region--dark-background a.button:hover,
+.region--dark-background input[type="submit"]:hover,
+.region--dark-background input[type="reset"]:hover,
+.region--dark-background input[type="button"]:hover,
+.region--dark-background a.button:focus,
+.region--dark-background input[type="submit"]:focus,
+.region--dark-background input[type="reset"]:focus,
+.region--dark-background input[type="button"]:focus {
+  color: $dark;
+}
+a.button--colored,
+.region--colored-background a.button--colored,
+.region--dark-background a.button--colored,
+.region--black-background a.button--colored {
+  background-color:  $base;
+  border-color:  $base;
+}
+
+/* components: comment */
+.comment ul.links li a {
+  color:  $base;
+}
+.comment ul.links li a:hover {
+  color: $dark;
+}
+
+/* components: comments */
+.comment-wrapper h2.title {
+  color:  $base;
+}
+
+/* components: contact info */
+.contact-info .icon {
+  background:  $base;
+}
+.contact-info li > i {
+  background:  $base;
+}
+.region--light-typography.region--colored-background .contact-info li i,
+.region--light-typography.region--colored-background .contact-info .icon {
+  color:  $base;
+}
+.region--light-typography.region--dark-background .contact-info li i,
+.region--light-typography.region--dark-background .contact-info .icon {
+  color: $dark;
+}
+.region--dark-typography .contact-info-items-grid .contact-info-item__text {
+  color: $dark;
+}
+
+/* components: fancy block */
+.region--colored-background .fancy-block-text {
+  background-color:  $base;
+}
+.region--dark-background .fancy-block-text {
+  background-color: $dark;
+}
+
+/* components: fancy linked images block */
+.clip-path-support .clip-pentagon-container {
+  background-color:  $base;
+}
+.clip-path-support .clip-circle-container {
+  background-color:  $base;
+}
+.clip-path-support .clip-rectangle-container:before {
+  border-color:  $base;
+}
+@-moz-document url-prefix() {
+  .clip-pentagon-container {
+    background-color:  $base;
+  }
+  .clip-circle-container {
+    background-color:  $base;
+  }
+  .clip-rectangle-container:before {
+    border-color:  $base;
+  }
+}
+
+/* components: featured linked text tiles block */
+.featured-linked-text-tile .featured-linked-text-tile__title {
+  color:  $base;
+}
+.featured-linked-text-tile .featured-linked-text-tile__title a {
+  color:  $base;
+}
+.featured-linked-text-tile .featured-linked-text-tile__title a:hover {
+  color: $dark;
+}
+.featured-linked-text-tile a.featured-linked-text-tile__link {
+  color:  $base;
+}
+.featured-linked-text-tile a.featured-linked-text-tile__link:hover {
+  color: $dark;
+}
+
+/* components: content tabs */
+.field--name-field-mt-content-tabs .nav-tabs > li > a {
+  color:  $base;
+}
+.field--name-field-mt-content-tabs .nav-tabs > li > a:hover {
+  color: $dark;
+}
+.field--name-field-mt-content-tabs .nav-tabs > li > a:focus,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a:focus,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a:hover {
+  color: $dark;
+}
+
+/* components: video */
+.video-item > a:before {
+  background-color: rgba($dark, 0.75);
+}
+
+/* components: taxonomy term */
+.field--entity-reference-target-type-taxonomy-term:after {
+  color:  $base;
+}
+
+/* components: flexslider global */
+.flexslider .flex-direction-nav a:before {
+  color:  $base;
+}
+.flexslider .flex-prev:hover:before,
+.flexslider .flex-next:hover:before {
+  color: $dark;
+}
+
+/* components: flexslider nodes slideshow */
+.nodes-slideshow-navigation .slides > li.is-active a {
+  color: $dark;
+}
+
+/* components: forms */
+input.form-text:hover,
+input.form-tel:hover,
+input.form-email:hover,
+input.form-url:hover,
+input.form-search:hover,
+input.form-file:hover,
+input.form-number:hover,
+input.form-color:hover,
+textarea:hover,
+select:hover,
+input.form-text:focus,
+input.form-tel:focus,
+input.form-email:focus,
+input.form-url:focus,
+input.form-search:focus,
+input.form-file:focus,
+input.form-number:focus,
+input.form-color:focus,
+textarea:focus,
+select:focus {
+  color: $dark;
+}
+.form-submit-icon {
+  background-color:  $base;
+}
+.region--colored-background .form-submit-icon {
+  background-color: $dark;
+}
+.label {
+  color: $dark;
+}
+
+/* components: highlights */
+.highlight-head {
+  color: $dark;
+  border-color:  $base;
+}
+.highlight-body {
+  color: $dark;
+}
+
+/* components: image overlay */
+.overlay--colored {
+  background-color: rgba($dark, 0.75);
+}
+.overlay-icon--colored.overlay-icon--button {
+  background-color:  $base;
+  border-color:  $base;
+}
+.overlay-icon--white.overlay-icon--button:hover,
+.region--light-typography .overlay-icon--white.overlay-icon--button:hover {
+  color: $dark;
+}
+.overlay-icon--colored.overlay-icon--button:hover,
+.region--light-typography .overlay-icon--colored.overlay-icon--button:hover {
+  background-color: $dark;
+  border-color: $dark;
+}
+
+/* components: layout switcher */
+.layout-switcher li.active a {
+  color:  $base;
+}
+
+/* components: menu */
+ul.menu li a.is-active {
+  color: $dark;
+}
+ul.menu li > a:before {
+  color: $dark;
+}
+.header-container ul.menu li a {
+  color: $dark;
+}
+.header-container ul.menu li a:hover,
+.header-container ul.menu li.active-trail > a {
+  color:  $base;
+}
+.header-container .region--light-typography ul.menu li a:hover,
+.header-container .region--light-typography ul.menu li.active-trail > a {
+  color:  $base;
+}
+.region--dark-typography .subfooter__section ul.menu li a {
+  color: $dark;
+}
+.region--dark-typography .subfooter__section ul.menu li a:hover {
+  color:  $base;
+}
+.header-container .sf-menu li.sfHover > a,
+.header-container .region--light-typography .sf-menu li.sfHover > a {
+  color:  $base;
+}
+.header-container ul.sf-menu>li>a.menuparent:after {
+  color:  $base;
+}
+.menu.cta-active > li:last-child > a {
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+  background-color:  $base;
+}
+.menu.cta-active > li:last-child > a:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+.region--light-typography.js-transparent-header ul.menu.sf-accordion li a {
+  color: $dark;
+}
+
+/* components: mini pager */
+li.pager__item a:hover {
+  background-color:  $base;
+}
+.region--gray-background li.pager__item > a,
+.region--gray-background li.pager__item.is-active {
+  background-color: $dark;
+}
+.region--gray-background li.pager__item > a:hover {
+  background-color:  $base;
+}
+.region--colored-background li.pager__item a:hover {
+  color:  $base;
+}
+.region--dark-background li.pager__item a:hover {
+  color: $dark;
+}
+
+/* components: node links */
+ul.links li a {
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+  background-color:  $base;
+}
+ul.links li a:hover {
+  background-color: $dark;
+}
+
+/* components: node product */
+.node--type-mt-product .comments-count__counter {
+  color:  $base;
+}
+.node--type-mt-product .field--name-field-mt-price {
+  color:  $base;
+}
+.node--type-mt-product .field--name-field-mt-buy-link a {
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+  background-color:  $base;
+}
+.node--type-mt-product .field--name-field-mt-buy-link a:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+.region--colored-background .field--name-field-mt-buy-link a:hover {
+  color:  $base;
+}
+.region--dark-background .field--name-field-mt-buy-link a:hover {
+  color: $dark;
+}
+
+/* components: node service */
+.node--type-mt-service .field--name-field-mt-buy-link a {
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+  background-color:  $base;
+}
+.node--type-mt-service .field--name-field-mt-buy-link a:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}.region--colored-background .field--name-field-mt-buy-link a:hover {
+  color:  $base;
+}
+.region--dark-background .field--name-field-mt-buy-link a:hover {
+  color: $dark;
+}
+
+/* components: owl carousel global */
+.owl-theme .owl-controls .owl-buttons div {
+  color:  $base;
+}
+.owl-theme .owl-controls .owl-buttons div:hover {
+  color: $dark;
+}
+
+/* components: pager */
+li.pager__item a:hover,
+li.pager__item.is-active a {
+  background-color:  $base;
+}
+.region--colored-background li.pager__item a:hover,
+.region--colored-background li.pager__item.is-active a,
+.region--colored-background li.pager__item.is-active:last-child a {
+  color:  $base;
+}
+.region--dark-background li.pager__item a:hover,
+.region--dark-background li.pager__item.is-active a,
+.region--dark-background li.pager__item.is-active:last-child a {
+  color: $dark;
+}
+.region--gray-background li.pager__item > a {
+  background-color: $dark;
+}
+.region--gray-background li.pager__item > a:hover,
+.region--gray-background li.pager__item.is-active a {
+  background-color:  $base;
+}
+
+/* components: pills */
+.nav-pills > li > a {
+  background-color:  $base;
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+.region--colored-background .nav-pills > li.active > a,
+.region--colored-background .nav-pills > li.active > a:focus,
+.region--colored-background .nav-pills > li.active > a:hover,
+.region--colored-background .nav-pills > li > a:hover,
+.region--colored-background .nav-pills > li > a:focus {
+  color:  $base;
+}
+.region--dark-background .nav-pills > li.active > a,
+.region--dark-background .nav-pills > li.active > a:focus,
+.region--dark-background .nav-pills > li.active > a:hover,
+.region--dark-background .nav-pills > li > a:hover,
+.region--dark-background .nav-pills > li > a:focus {
+  color: $dark;
+}
+
+/* components: post progress */
+.post-progress__bar {
+  background-color:  $base;
+}
+
+/* components: separators */
+.separator--colored {
+  background-color:  $base;
+}
+.separator--dark {
+  background-color: $dark;
+}
+
+/* components: site branding */
+.site-name a {
+  color: $dark;
+}
+
+/* components: site slideout */
+.slideout-toggle {
+  background-color:  $base;
+}
+
+/* components: slider revolution full screen */
+.scroll-button a {
+  background-color: rgba($dark, 0.9);
+}
+
+/* components: slider revolution global */
+.region--light-typography.region--dark-background .tp-caption__title a:hover {
+  color:  $base;
+}
+.tp-caption__button {
+  border-color:  $base;
+  background-color:  $base;
+}
+.tp-caption__button:hover {
+  background-color: $dark;
+  border-color: $dark;
+}
+.region--light-typography.region--dark-background a.tp-caption__button:hover {
+  color: $dark;
+}
+.region--light-typography.region--colored-background a.tp-caption__button:hover {
+  color:  $base;
+}
+.slideshow-boxedwidth .tp-caption--transparent-background.region--dark-background,
+.slideshow-fullscreen .tp-caption--transparent-background.region--dark-background,
+.slideshow-fullwidth .tp-caption--transparent-background.region--dark-background,
+.slideshow-internal .tp-caption--transparent-background.region--dark-background {
+  background-color: rgba($dark, 0.9);
+}
+.tparrows {
+  background-color:  $base;
+}
+.tparrows:hover {
+  background-color: $dark;
+}
+.tp-bullets .tp-bullet {
+  background-color: $dark;
+}
+.tp-bullets .tp-bullet:hover,
+.tp-bullets .tp-bullet.selected {
+  background-color:  $base;
+}
+.tp-tabs {
+  background-color: rgba($dark, 0.93) !important;
+}
+.tp-tabs .tp-tab.selected,
+.tp-tabs .tp-tab:hover {
+  background-color: $dark;
+}
+
+/* components: tables */
+table tr th {
+  color: $dark;
+}
+.region--gray-background table tr th {
+  background-color: $dark;
+}
+
+/* components: tabs */
+.nav-tabs > li > a {
+  color:  $base;
+}
+.nav-tabs > li > a:hover {
+  border-color: $dark $dark $dark;
+  background: $dark;
+}
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: $dark;
+  border: 1px solid $dark;
+  border-bottom-color: $dark;
+}
+.nav-tabs.nav-tabs--vertical > li > a:hover,
+.nav-tabs.nav-tabs--vertical > li > a:focus,
+.nav-tabs.nav-tabs--vertical .active > a,
+.nav-tabs.nav-tabs--vertical .active > a:hover,
+.nav-tabs.nav-tabs--vertical .active > a:focus {
+  border-color: $dark transparent $dark $dark;
+}
+.region--black-background .nav-tabs > li.active > a,
+.region--black-background .nav-tabs > li > a:focus,
+.region--black-background .nav-tabs > li.active > a:focus,
+.region--black-background .nav-tabs > li.active > a:hover {
+  border-color:  $base;
+}
+.region--black-background .nav-tabs > li.active > a,
+.region--black-background .nav-tabs > li > a:focus,
+.region--black-background .nav-tabs > li > a:hover {
+  background-color:  $base;
+  border-color:  $base;
+}
+.region--dark-background .nav-tabs > li.active > a,
+.region--dark-background .nav-tabs > li > a:focus,
+.region--dark-background .nav-tabs > li.active > a:focus,
+.region--dark-background .nav-tabs > li.active > a:hover {
+  border-color:  $base;
+}
+.region--dark-background .nav-tabs > li.active > a,
+.region--dark-background .nav-tabs > li > a:focus,
+.region--dark-background .nav-tabs > li > a:hover {
+  background-color:  $base;
+  border-color:  $base;
+}
+.nav-tab__subtitle {
+  color:  $base;
+}
+.nav-tabs.nav-tabs--fancy > li > a {
+  color: $dark;
+}
+.nav-tabs.nav-tabs--fancy > .active > a,
+.nav-tabs.nav-tabs--fancy > .active > a:focus,
+.nav-tabs.nav-tabs--fancy > .active > a:hover,
+.nav-tabs.nav-tabs--fancy > li > a:focus,
+.nav-tabs.nav-tabs--fancy > li > a:hover {
+  border-color: $dark;
+  color: $dark;
+}
+
+/* components: to top */
+.to-top {
+  background-color:  $base;
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+}
+.to-top:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+
+/* components: tooltip */
+.tooltip-inner {
+  background-color: $dark;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: $dark;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: $dark;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: $dark;
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: $dark;
+}
+
+/* components: transparent header */
+.onscroll .js-transparent-header .header.region--dark-background {
+  background-color: rgba($dark, 0.9);
+  border-bottom-color: $dark;
+}
+@media (max-width: 767px) {
+  .js-transparent-header .region--dark-background {
+    background-color: $dark!important;
+  }
+}
+
+/* components: view collections image overlay */
+.view-collections-grid .overlay-inner .overlay-animated,
+.view-collections-carousel .overlay-inner .overlay-animated,
+.view-collection-masonry .overlay-inner .overlay-animated {
+  background-color:  $base;
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+}
+.view-collections-grid .overlay-inner .overlay-animated:hover,
+.view-collections-carousel .overlay-inner .overlay-animated:hover,
+.view-collection-masonry .overlay-inner .overlay-animated:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+
+/* components: view grid style 2 */
+.view-grid-style-2 .views-field-title a {
+  color:  $base;
+}
+.view-grid-style-2 .views-field-title a:hover {
+  color: $dark;
+}
+.region--light-typography.region--dark-background .view-grid-style-2 a.link-hover-style-2:before,
+.region--light-typography.region--dark-background .view-grid-style-2 .link-hover-style-2:before {
+  color:  $base;
+}
+
+/* components: view items list */
+.view-items-list .views-field-title a {
+  color: $dark;
+}
+.view-items-list .views-field-title a:hover {
+  color:  $base;
+}
+.view-items-list .views-field-field-mt-price {
+  color:  $base;
+}
+
+/* components: view popular taxonomy */
+.view-mt-popular-tags .views-row a {
+  background-color:  $base;
+}
+.view-mt-popular-tags .views-row a:hover {
+  background-color: $dark;
+}
+.region--colored-background .view-mt-popular-tags .views-row a:hover {
+  color:  $base;
+}
+.region--dark-background .view-mt-popular-tags .views-row a:hover {
+  color: $dark;
+}
+
+/* components: view pricing tables */
+.view-pricing-tables .pricing-table-header {
+  background-color: $dark;
+}
+.view-pricing-tables .pricing-table-body {
+  color: $dark;
+}
+.pricing-table a.button {
+  background-color:  $base;
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+}
+.pricing-table a.button:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+.region--dark-background .view-pricing-tables .pricing-table-header {
+  background-color:  $base;
+}
+.region--black-background .view-pricing-tables .pricing-table-header {
+  background-color:  $base;
+}
+
+/* components: view products tags */
+.view-product-tags .views-field-name a {
+  background-color:  $base;
+}
+.view-product-tags .views-field-name a:hover {
+  background-color: $dark;
+}
+.region--colored-background .view-product-tags .views-field-name a:hover {
+  color:  $base;
+}
+.region--dark-background .view-product-tags .views-field-name a:hover {
+  color: $dark;
+}
+
+/* components: view products grid */
+.view-products-grid .views-field-field-mt-price {
+  color:  $base;
+}
+.view-products-grid .views-field-title h5 a {
+  color: $dark;
+}
+
+/* components: view promoted items */
+.view-promoted-items-icon {
+  background-color:  $base;
+}
+.view-promoted-items-icon:hover {
+  background-color: $dark;
+}
+.view-promoted-items-info span,
+.view-promoted-items-info a {
+  background-color:  $base;
+}
+
+/* components: view team members grid 2 */
+.view-team-members-grid-2 .views-field-title a {
+  color: $dark;
+}
+
+/* components: view testimonials grid 2 */
+.view-testimonials-grid-2 .views-field-title a {
+  color: $dark;
+}
+
+/* components: view testimonials grid */
+.view-testimonials-grid .views-field-title a {
+  color: $dark;
+}
+.region--gray-background .view-testimonials-grid .views-field-body {
+  background-color: $dark;
+}
+.region--gray-background .view-testimonials-grid .views-field-body:after {
+  border-color: $dark transparent transparent transparent;
+}
+
+/* components: view testimonials list */
+.view-testimonials-list .views-field-title a {
+  color: $dark;
+}
+.region--gray-background .view-testimonials-list .views-field-body {
+  background-color: $dark;
+}
+.region--gray-background .view-testimonials-list .views-field-body:after {
+  border-color: $dark transparent transparent transparent;
+}
+
+/* components: view titles list */
+.view-titles-list .views-field-title a:before {
+  color: $dark;
+}
+
+/* components: views */
+.view > .more-link a {
+  -webkit-box-shadow: 0 0 15px rgba( $base, 0.5);
+  box-shadow: 0 0 15px rgba( $base, 0.5);
+  background-color:  $base;
+}
+.view > .more-link a:hover {
+  background-color: $dark;
+  -webkit-box-shadow: 0 0 15px rgba($dark, 0.5);
+  box-shadow: 0 0 15px rgba($dark, 0.5);
+}
+.region--dark-background .view > .more-link a:hover {
+  color: $dark;
+}
+.region--colored-background .view > .more-link a:hover {
+  color:  $base;
+}

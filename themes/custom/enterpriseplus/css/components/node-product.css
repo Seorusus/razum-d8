@@ -1,0 +1,120 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s product content type.
+ */
+@media (min-width: 992px) {
+  .node--type-mt-product .node__main-content {
+    padding-left: 20px;
+  }
+}
+.node--type-mt-product .node__header {
+  padding: 0;
+}
+.node--type-mt-product .node__header + .field:not(.field--name-field-mt-price) {
+  padding-top: 15px;
+}
+.node--type-mt-product:not(.node--view-mode-mt-slide-view) .node__title {
+  margin-bottom: 0;
+}
+.node--type-mt-product .field--name-field-image {
+  margin-bottom: 30px;
+}
+.node--type-mt-product .field--name-field-image img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e7e7e7;
+}
+.node--type-mt-product.node--view-mode-teaser .images-container {
+  margin-bottom: 15px;
+}
+.node--type-mt-product .comments-count__counter {
+  font-size: 14px;
+  font-weight: 500;
+}
+.region--light-typography .node--type-mt-product .comments-count__counter {
+  color: #ffffff;
+}
+.node--type-mt-product .field--name-field-mt-price {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.region--light-typography .node--type-mt-product .field--name-field-mt-price {
+  color: #ffffff;
+}
+.node--type-mt-product .field--name-field-mt-price + .field {
+  padding-top: 15px;
+}
+.field--name-field-mt-product-code,
+.field--name-field-mt-product-availability {
+  padding: 10px 20px;
+  background-color: #f2f4f6;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.node--type-mt-product .field--name-field-mt-buy-link a {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 18px 25px 17px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5px 10px 0;
+  text-align: center;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.region--colored-background .field--name-field-mt-buy-link a,
+.region--dark-background .field--name-field-mt-buy-link a,
+.region--black-background .field--name-field-mt-buy-link a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+.region--colored-background .field--name-field-mt-buy-link a:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+.region--dark-background .field--name-field-mt-buy-link a:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+.region--black-background .field--name-field-mt-buy-link a:hover {
+  color: #232323;
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+/*inline list in product page*/
+.node--type-mt-product .inline-list {
+  font-size: 12px;
+}
+.node--type-mt-product .inline-list .field__item,
+.node--type-mt-product .inline-list .field__label,
+.node--type-mt-product .inline-list .field {
+  display: inline-block;
+}
+.node--type-mt-product .inline-list .field__item + .field__item {
+  padding-left: 10px;
+}
+.node--type-mt-product .inline-list__icon {
+  padding-right: 5px;
+}
+.node--type-mt-product .inline-list__item a i {
+  padding-right: 5px;
+}

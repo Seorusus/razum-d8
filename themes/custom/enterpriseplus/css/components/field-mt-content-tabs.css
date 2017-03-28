@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Visual styles for mt-tab field in Enterprise+.
+ */
+.field--name-field-mt-content-tabs {
+  margin: 30px 0;
+}
+.field--name-field-mt-content-tabs .nav-tabs {
+  border-bottom: 1px solid #e9e9e9;
+}
+.field--name-field-mt-content-tabs .nav-tabs > li > a {
+  font-size: 24px;
+  margin: 0;
+  border: none;
+  padding: 10px 25px 10px 0;
+  text-transform: none;
+  background-color: transparent;
+}
+.field--name-field-mt-content-tabs .nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+.field--name-field-mt-content-tabs .nav-tabs > li > a:focus,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a:focus,
+.field--name-field-mt-content-tabs .nav-tabs > li.active > a:hover {
+  background-color: transparent;
+  border: none;
+}
+.field--name-field-mt-content-tabs .nav-tabs ~ .tab-content {
+  padding: 30px 0 10px;
+  border-width: 0;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .field--name-field-mt-content-tabs .nav-tabs > li > a {
+    font-size: 18px;
+    padding: 10px 15px 10px 0;
+  }
+}

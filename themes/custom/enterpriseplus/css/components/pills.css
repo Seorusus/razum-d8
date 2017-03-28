@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s nav pills.
+ */
+.nav.nav-pills {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.nav.nav-pills.text-center {
+  font-size: 0px;
+}
+.nav.nav-pills.text-center > li {
+  float: none;
+  display: inline-block;
+}
+.nav-pills > li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.nav.nav-pills > li,
+.nav.nav-pills > li + li {
+  margin: 0px 15px 15px;
+}
+
+/*nav pills @colored-regions*/
+.region--light-typography .nav-pills > li > a {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.region--colored-background .nav-pills > li.active > a,
+.region--colored-background .nav-pills > li.active > a:focus,
+.region--colored-background .nav-pills > li.active > a:hover,
+.region--colored-background .nav-pills > li > a:hover,
+.region--colored-background .nav-pills > li > a:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.region--dark-background .nav-pills > li.active > a,
+.region--dark-background .nav-pills > li.active > a:focus,
+.region--dark-background .nav-pills > li.active > a:hover,
+.region--dark-background .nav-pills > li > a:hover,
+.region--dark-background .nav-pills > li > a:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.region--black-background .nav-pills > li.active > a,
+.region--black-background .nav-pills > li.active > a:focus,
+.region--black-background .nav-pills > li.active > a:hover,
+.region--black-background .nav-pills > li > a:hover,
+.region--black-background .nav-pills > li > a:focus {
+  background-color: #ffffff;
+  color: #232323;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

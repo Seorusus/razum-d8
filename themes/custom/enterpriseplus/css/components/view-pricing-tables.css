@@ -1,0 +1,138 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s pricing tables.
+ */
+.view-pricing-tables {
+  position: relative;
+  padding-top: 30px;
+}
+.view-pricing-tables .view-header {
+  padding-bottom: 60px;
+}
+.view-pricing-tables .pricing-table {
+  position: relative;
+  min-height: 450px;
+  padding: 0 0 100px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  background-color: #f2f4f6;
+}
+.view-pricing-tables .pricing-table:hover {
+  -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  -o-box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.view-pricing-tables .pricing-table-header {
+  position: relative;
+  padding: 30px 30px 0px;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+.view-pricing-tables .most-popular .pricing-table-header {
+  padding-bottom: 20px;
+}
+.view-pricing-tables .pricing-table .views-field-title h4 {
+  padding: 0 0 15px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.view-pricing-tables .pricing-table .views-field-title h4 a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+.view-pricing-tables .views-field-field-mt-price {
+  font-size: 70px;
+  padding: 0;
+}
+.view-pricing-tables .pricing-table .views-field-field-mt-most-popular {
+  position: absolute;
+  font-size: 11px;
+  line-height: 1;
+  position: absolute;
+  width: 100%;
+  padding: 0 5px;
+  left: 0;
+  bottom: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.view-pricing-tables .pricing-table-body {
+  padding: 30px 0;
+}
+.view-pricing-tables .pricing-table .item-list>ul {
+  list-style: none;
+  margin: 0;
+}
+.view-pricing-tables .views-row:not(.most-popular) .views-field-field-mt-most-popular {
+  display: none;
+}
+.view-pricing-tables .pricing-table .item-list li {
+  margin: 0;
+}
+.view-pricing-tables .pricing-table .views-field-item {
+  padding: 7px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid #dfe5eb;
+}
+.view-pricing-tables .pricing-table li:last-child .views-field-item {
+  border-bottom: none;
+}
+.view-pricing-tables .pricing-table-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 0 40px;
+}
+.pricing-table a.button {
+  border: none;
+}
+.pricing-table a.button:hover {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .view-pricing-tables .most-popular {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-8 .view-pricing-tables .views-field-field-mt-price {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .view-pricing-tables .pricing-table-footer {
+    padding: 0 25px 25px;
+  }
+  .view-pricing-tables .views-field-field-mt-price {
+    font-size: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .view-pricing-tables .pricing-table .views-field-item {
+    font-size: 0.87em;
+  }
+  .view-pricing-tables .pricing-table-footer {
+    padding: 0 15px 15px;
+  }
+  .view-pricing-tables .views-field-field-mt-price {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .view-pricing-tables .pricing-table-footer {
+    padding: 0 15px 15px;
+  }
+  .view-pricing-tables .views-field-field-mt-price {
+    font-size: 40px;
+  }
+}

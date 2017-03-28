@@ -1,0 +1,112 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s promoted items views.
+ */
+.view-promoted-items .views-row {
+  margin: 30px 0;
+}
+.view-promoted-items-block .views-row {
+  margin: 0 0 30px 0;
+}
+.view-promoted-items-icon {
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: 0 auto 35px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+}
+.view-promoted-items-icon:hover {
+  color: #ffffff;
+}
+.view-promoted-items-icon i {
+  font-size: 36px;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+}
+.region--light-typography .view-promoted-items-icon {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.region--light-typography .view-promoted-items-icon:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #ffffff;
+}
+.view-promoted-items .views-field-field-image {
+  margin: 0 auto 40px;
+}
+.view-promoted-items .circle-img {
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.view-promoted-items .circle-img img {
+  border-radius: 100%;
+}
+.view-promoted-items .views-field-title a {
+  margin: 0;
+  display: inline;
+  font-weight: 500;
+}
+.view-promoted-items .views-field-field-mt-price {
+  font-size: 18px;
+}
+.region--light-typography .view-promoted-items .views-field-field-mt-price {
+  color: #ffffff;
+}
+.view-promoted-items h5 {
+  margin: 0;
+}
+.view-promoted-items-info {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  z-index: 11;
+}
+.view-promoted-items-info span,
+.view-promoted-items-info a {
+  padding: 5px 8px;
+  line-height: 1;
+  font-size: 11px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.view-promoted-items-info span:hover {
+  cursor: default;
+}
+.view-promoted-items-info a.comments {
+  padding-left: 30px;
+  position: relative;
+}
+.region--light-typography .view-promoted-items-info a.comments {
+  color: #ffffff;
+}
+.view-promoted-items-info a.comments:hover {
+  text-decoration: none;
+}
+.view-promoted-items-info a.comments:after {
+  font-family: 'FontAwesome';
+  position: absolute;
+  content: "\f075";
+  left: 7px;
+  top: 5px;
+  font-size: 13px;
+}
+.view-promoted-items .views-field-title + .views-field-body {
+  margin-top: 25px;
+}
+.view-promoted-items .views-field-created {
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media (max-width:767px) {
+  .view-promoted-items .views-row {
+    margin-bottom: 70px !important;
+  }
+}

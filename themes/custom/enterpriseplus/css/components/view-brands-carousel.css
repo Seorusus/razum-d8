@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s products carousel.
+ */
+.mt-carousel-brands .owl-item {
+  text-align: center;
+}
+.mt-carousel-brands .mt-carousel-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+  max-width: 100%;
+}
+
+/*brans carousel's overlay*/
+.mt-carousel-brands .overlay-target-link a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  font-size: 0;
+}

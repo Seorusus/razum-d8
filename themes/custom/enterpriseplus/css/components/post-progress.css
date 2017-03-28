@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Visual styles for Enterprise+'s post progress component.
+ */
+.post-progress {
+  display: none;
+}
+.post-progress__bar {
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+}
+@media (min-width: 768px) {
+  .post-progress {
+    display: block;
+  }
+}
