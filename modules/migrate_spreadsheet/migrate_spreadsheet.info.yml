@@ -1,0 +1,13 @@
+type: module
+name: 'Migrate Spreadsheet'
+description: 'Provides a migrate source plugin for importing data from spreadsheet files.'
+# core: '8.x'
+package: Migration
+dependencies:
+  - migrate
+
+# Information added by Drupal.org packaging script on 2017-02-24
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'migrate_spreadsheet'
+datestamp: 1487973602
