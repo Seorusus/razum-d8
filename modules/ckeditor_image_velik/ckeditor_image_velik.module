@@ -8,7 +8,7 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
- * Implements hook_help().
+ * Implements hook_help(). test
  */
 function ckeditor_image_velik_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
