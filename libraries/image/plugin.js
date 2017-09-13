@@ -4,7 +4,7 @@
  */
 
 /**
- * @fileOverview The Image plugin. t
+ * @fileOverview The Image plugin.
  */
 
 ( function() {
