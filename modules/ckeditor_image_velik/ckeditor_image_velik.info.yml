@@ -1,0 +1,13 @@
+name: CKEditor image Velik
+type: module
+description: Upload images to CKEditor.
+# core: 8.x
+package: CKEditor
+dependencies:
+  - ckeditor
+
+# Information added by Drupal.org packaging script on 2017-09-12
+version: '8.x-1.1'
+core: '8.x'
+project: 'ckeditor_image_velik'
+datestamp: 1488359586
