@@ -6,7 +6,7 @@ use Drupal\editor\Entity\Editor;
 use Drupal\ckeditor\CKEditorPluginBase;
 
 /**
- * Defines the "image" plugin. yy
+ * Defines the "image" plugin. yyy
  *
  * @CKEditorPlugin(
  *   id = "image",
