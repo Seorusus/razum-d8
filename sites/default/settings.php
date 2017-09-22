@@ -15,6 +15,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *      the site settings remain consistent.
  */
 include __DIR__ . "/settings.pantheon.php";
+ini_set('memory_limit', '512M');
 
 /**
  * If there is a local settings file, then include it
