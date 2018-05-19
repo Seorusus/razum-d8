@@ -3,4 +3,6 @@ type: module
 description: 'A block showing the weather for the selected city'
 package: Custom
 configure: blockweather.add_record
+dependencies:
+- block
 core: 8.x
