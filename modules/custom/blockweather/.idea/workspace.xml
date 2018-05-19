@@ -23,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_blockweather.module" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_blockweather.module" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_blockweather.module">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -33,12 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blockweather.info.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blockweather.info.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blockweather.info.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="35" />
+              <folding>
+                <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,9 +75,9 @@
       <list>
         <option value="$PROJECT_DIR$/blockweather.module" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/blockweather.info.yml" />
         <option value="$PROJECT_DIR$/src/Plugin/Block/blockweather.php" />
         <option value="$PROJECT_DIR$/src/Plugin/Block/BlockWeather.php" />
+        <option value="$PROJECT_DIR$/blockweather.info.yml" />
       </list>
     </option>
   </component>
@@ -175,28 +177,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blockweather" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blockweather" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -271,12 +251,12 @@
       <workItem from="1526672374848" duration="2775000" />
       <workItem from="1526707913127" duration="1675000" />
       <workItem from="1526711627186" duration="27000" />
-      <workItem from="1526711715661" duration="1213000" />
+      <workItem from="1526711715661" duration="1829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5793000" />
+    <option name="totallyTimeSpent" value="6409000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -339,7 +319,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="9" />
-          <folding />
+          <folding>
+            <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -374,7 +356,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="9" />
-          <folding />
+          <folding>
+            <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,7 +393,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="9" />
-          <folding />
+          <folding>
+            <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -436,7 +422,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="53" />
-          <folding />
+          <folding>
+            <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,14 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockweather.info.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Plugin/Block/BlockWeather.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -483,6 +463,16 @@
         <state relative-caret-position="90">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockweather.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1526716955266" expanded="true" signature="126:149" ph="blockweath..." />
+          </folding>
         </state>
       </provider>
     </entry>
