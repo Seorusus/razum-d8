@@ -3,7 +3,7 @@
  * @file
  * Contains \Drupal\blockweather\Plugin\Block\BlockWeather.
  */
-namespase Drupal\blockweather\Plagin\Block;
+namespace Drupal\blockweather\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 /**
