@@ -43,4 +43,6 @@ class BlockWeatherBlockForm extends FormBase {
     $city_select = $form_state->getValue('city_select');
     drupal_set_message($city_select);
   }
+
+
 }
