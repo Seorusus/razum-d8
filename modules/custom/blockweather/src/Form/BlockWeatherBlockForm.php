@@ -26,7 +26,7 @@ class BlockWeatherBlockForm extends FormBase {
     # City select
     $form['city_select'] = array(
         '#type' => 'textfield',
-        '#title' => 'Selected place',
+        '#title' => 'Selected place:',
         '#required' => TRUE,
         '#attributes' => array(
           'placeholder' => 'Select city',
@@ -52,6 +52,4 @@ class BlockWeatherBlockForm extends FormBase {
     $city_select = $form_state->getValue('city_select');
     drupal_set_message($city_select);
   }
-
-
 }

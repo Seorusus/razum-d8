@@ -22,6 +22,8 @@ class BlockWeather extends BlockBase {
    */
   public function build() {
 
-    $form = \Drupal::formbuilder()->getForm('Drupal\blockweather\Form\BlockWeatherBlockForm');
+    $form = \Drupal::formBuilder()->getForm('Drupal\blockweather\Form\BlockWeatherBlockForm');
+    return $form;
+
   }
 }
