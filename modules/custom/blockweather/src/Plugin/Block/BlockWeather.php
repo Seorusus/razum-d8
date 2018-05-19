@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\custom_block\Plugin\Block\CustomBlock.
+ * Contains \Drupal\blockweather\Plugin\Block\BlockWeather.
  */
 namespase Drupal\blockweather\Plagin\Block;
 
