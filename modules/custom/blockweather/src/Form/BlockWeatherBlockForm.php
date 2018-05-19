@@ -12,16 +12,25 @@ class BlockWeatherBlockForm extends FormBase {
   /**
    * {@inheritdoc}
    */
+
+  public function getFormId() {
+    return 'blockweather_form';
+  }
+  /**
+   * {@inheritdoc}
+   * Form
+   */
+
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     # City select
     $form['city_select'] = array(
         '#type' => 'textfield',
-        '#title' => t('Selected place'),
+        '#title' => 'Selected place',
         '#required' => TRUE,
         '#attributes' => array(
           'placeholder' => 'Select city',
-      )
+      ),
     );
 
     $form['actions']['#type'] = 'actions';
